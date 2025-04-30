@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# Product Upload Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application I built for content creators to efficiently manage and upload product assets. This project showcases my skills with React, TypeScript, and modern web development practices.
 
-Currently, two official plugins are available:
+## ⚙️ How to Run the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/MorhafGhziel/product-upload-dashboard.git
+cd admin-product-upload-tool
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and visit:
+
+```
+http://localhost:5173
+```
+
+## 💡 Development Time
+
+The project was completed in 6 hours.
+
+## 🤖 Development Tools
+
+During development, I utilized several tools to enhance efficiency:
+
+- **Cursor Ai (Claude)**: For efficient code editing and quick reference
+- **ChatGPT**: Used for quick debugging and best practices research
+- **V0**: Used for gathering design ideas and layout inspiration
+
+I maintained ownership of all implementation decisions while using these tools to streamline the development process.
+
+## 🚀 Demo
+
+Check out the live demo here: [Product Upload Dashboard](https://product-upload-dashboard.vercel.app/products)
+
+## 🛠️ Tech Stack
+
+- React + Vite
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+
+## 🌟 Key Features I Implemented
+
+- Responsive design optimized for both desktop and mobile views
+- Multi-image upload system with live preview
+- Real-time form validation and error handling
+- Interactive success notifications and loading states
