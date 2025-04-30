@@ -97,7 +97,7 @@ const ProductUpload = () => {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-3 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-6xl px-3 sm:px-6 lg:px-8">
       {/* Success Toast */}
       <div
         className={`fixed top-4 right-4 left-4 sm:left-auto z-[200] transition-all duration-500 ease-in-out transform ${
